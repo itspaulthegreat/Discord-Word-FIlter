@@ -1,0 +1,4 @@
+discord-ext-typed-commands==1.0.3
+discord.py[voice]
+discord.py==1.5.1
+discord
