@@ -4,11 +4,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
-const tokens = require("./token.json");
+//const tokens = require("./token.json");
 
 
 
-client.login(tokens['token']).catch(console.error);
+client.login(process.env.token).catch(console.error);
 client.on('ready', () => {
   console.log('Now Online, ready to filter!');
 });
